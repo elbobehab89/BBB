@@ -133,7 +133,7 @@ function Start_Bot()
 local TokenBot = io.open('./inc/Token.txt', "r")
 if not TokenBot then
 print('\27[0;33m>>'..[[
-echo -e "\e[38;5;77m       •{ تنصيب سورس بلانك بنسبه 100% ]  }•\e[0m"
+echo -e "\e[38;5;77m       •{ تنصيب سورس ايفرتون بنسبه 100% ]  }•\e[0m"
 echo -e "\e[38;5;77m       •{ •{ Join the Source Channel : @UP_II}• }•\e[0m"
  
 echo -e "\e[38;5;77m                 ██e[0m"
@@ -183,7 +183,7 @@ print(tostring(io.popen("lua inc/locks.lua"):read('*all')))
 end
 
 print('\27[0;33m>>'..[[
-echo -e "\e[38;5;77m       •{ تنصيب سورس بلانك بنسبه 100% ]  }•\e[0m"
+echo -e "\e[38;5;77m       •{ تنصيب سورس ايفرتون بنسبه 100% ]  }•\e[0m"
 echo -e "\e[38;5;77m       •{ •{ Join the Source Channel : @UP_II }• }•\e[0m"
  
 echo -e "\e[38;5;77m                 ██e[0m"
@@ -285,7 +285,7 @@ msg.GroupActive = false
 end
 
 if msg.sender_user_id_ == 1027286620 then 
-msg.TheRank =  'مـلـك الـتـيـلـي 💕"'
+msg.TheRank =  'مـالـك الـسـورس 💕"'
 msg.Rank = 1
 
 
@@ -377,7 +377,7 @@ SUDO_USER = redis:hgetall(blank..'username:'..SUDO_ID).username
 sendPhoto(msg.chat_id_,msg.id_,redis:get(blank..':WELCOME_BOT'),[[• مرحباً انا بوت ]]..redis:get(blank..':NameBot:')..[[ .
 • اختـصاصـي حمايـة الـمجموعات
 • تأكد من رفعـك للبـوت مشـرف في مجموعـتك واكتب تفعـيل 
-• قنـاة سورس بلانك ⇐ @UP_II. مـعرف المطور  :]]..SUDO_USER:gsub([[\_]],'_')..[[ .
+• قنـاة سورس ايفرتون ⇐ @UP_II. مـعرف المطور  :]]..SUDO_USER:gsub([[\_]],'_')..[[ .
 ]])
 return false
 end
